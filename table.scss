@@ -1,0 +1,34 @@
+// Since we are quickly switching between HTML5 layout to table, we needed to ensure that some styling could be overridden and quickly applied to fit our new HTML structure //
+.article__header {
+    display: table-cell;
+}
+
+.article__content__text {
+    vertical-align: middle;
+}
+
+.article__content__text,
+.article__content__cover {
+    padding: 0 27px; 
+}
+
+// This psuedo simulates some top-margin styling between the article <theader> and <tbody>, this is just a small nitpick to resemble the original layout closely
+.article tbody::before {
+    content: "";
+    display: block;
+    height: 10px; /* Simulates margin */
+}
+
+// By default our CSS dropdown menu doesn't work properly because our rule targetted divs
+// A simple copy-paste so our style affects the <table> element and not just <div> 
+// I'd clean this up but this is a simple assignment 
+.nav__list__item .dropdown-toggle:checked ~ table {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    padding: 2%;
+    font-size: smaller;
+    background: black;
+    color: white;
+  }

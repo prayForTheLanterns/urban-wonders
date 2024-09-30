@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> HTML5 Layout </title>
+    <meta name="author" content="Oswaldo Fabrizio Ascencio De Los Santos">
+    <meta name="description" content="HTML Layout assignment for CIS 385">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> <!-- FontAwesome is used for some icons classes in <i> tags-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css"> <!-- This stylesheet simply resets a lot of HTML elements, I always add these to my projects -->
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__title"> 
+            <span> Urban Wonders </span>
+            <i class="fas fa-city"></i>
+        </h1>
+        <h2 class="header__caption"> 
+            <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__list__item nav__list__item--link"> 
+                    <a href="index.html"> Capitals of North America </a>
+                </li>
+                <li class="nav__list__item"> 
+                    <input type="checkbox" id="dropdown-toggle" class="dropdown-toggle">
+                    <label for="dropdown-toggle" class="nav__list__item__btn">
+                        <span> Ottawa </span>
+                        <i class="fas fa-angle-down"></i>
+                        <i class="fas fa-angle-up"></i>
+                    </label>
+                    <div class="nav__list__item__dropdown-menu">
+                        <a href="ottawa-table.html" data-dropdown> &lt; table &gt; Layout </a>
+                        <a href="ottawa-div.html" data-dropdown> &lt; div &gt; Layout </a>
+                        <a href="ottawa-html5.html" data-dropdown> &lt; html5 &gt; Layout </a>
+                    </div>
+                </li>
+                <li class="nav__list__item"> 
+                    <input type="checkbox" id="dropdown-toggle-2" class="dropdown-toggle">
+                    <label for="dropdown-toggle-2" class="nav__list__item__btn">
+                        <span> New York City </span>
+                        <i class="fas fa-angle-down"></i>
+                        <i class="fas fa-angle-up"></i>
+                    </label>
+                    <div class="nav__list__item__dropdown-menu">
+                        <a href="new-york-table.html" data-dropdown> &lt; table &gt; Layout </a>
+                        <a href="new-york-div.html" data-dropdown> &lt; div &gt; Layout </a>
+                        <a href="new-york-html5.html" data-dropdown> &lt; html5 &gt; Layout </a>
+                    </div>
+                </li>
+                <li class="nav__list__item"> 
+                    <input type="checkbox" id="dropdown-toggle-3" class="dropdown-toggle">
+                    <label for="dropdown-toggle-3" class="nav__list__item__btn">
+                        <span> Mexico City </span>
+                        <i class="fas fa-angle-down"></i>
+                        <i class="fas fa-angle-up"></i>
+                    </label>
+                    <div class="nav__list__item__dropdown-menu">
+                        <a href="mexico-city-table.html" data-dropdown> &lt; table &gt; Layout </a>
+                        <a href="mexico-city-div.html" data-dropdown> &lt; div &gt; Layout </a>
+                        <a href="mexico-city-html5.html" data-dropdown> &lt; html5 &gt; Layout </a>
+                    </div>
+                </li>
+            </ul>
+            </nav>
+        </h2>
+        <h3 class="header__credit"> 
+            <i> <span> Oswaldo Fabrizio Ascencio De Los Santos </span> <time datetime="2024-09-287"> 28-SEPT-2024 </time> </i>
+            <i> CIS 385 HTML5 Layouts; Limited Edition 3101 </i>
+        </h3>
+    </header>
+
+    <main class="content"> -->
+        <article class="article">
+            <div class="article__header">
+                <h2> New York City <i class="fas fa-flag-usa"></i> </h2>
+                <h3> A city that never sleeps, where towering landmarks meet vibrant culture on every corner. </h3>
+            </div>
+            <div class="article__content">
+                <div class=article__content__cover">
+                    <figure>
+                        <img src="new-york.jpg" alt="An image of New York's skyline at an angle">
+                        <figcaption> New York City in broad daylight</figcaption>
+                    </figure>
+                </div>
+                <div class="article__content__text">
+                    <h4> The Great Big Apple Baby!</h4>
+                    <p>New York City, the iconic metropolis known as "The Big Apple," is a city that pulsates with energy day and night. Whether it’s the towering skyscrapers of Manhattan or the cultural diversity found in every borough, New York never ceases to amaze. From Times Square’s flashing lights to the tranquility of Central Park, the city is a world of contrasts and excitement.</p>
+
+                    <p>As the birthplace of iconic landmarks like the Statue of Liberty and the Empire State Building, New York is a global hub for art, fashion, finance, and more. It’s home to world-renowned museums, such as the Metropolitan Museum of Art and the Museum of Modern Art, offering a cultural journey through centuries of history and creativity.</p>
+
+                    <p>New York City is also a food lover’s paradise. You can indulge in everything from Michelin-starred restaurants to the best street food you’ll ever taste. The city’s neighborhoods, like Chinatown, Little Italy, and Harlem, are rich with culinary traditions that tell the stories of the communities who shaped them.</p>
+
+                    <p>Whether you’re strolling through the historic streets of Greenwich Village or catching a Broadway show in the Theatre District, New York City offers endless experiences that will make every visit unforgettable. It’s a city of endless possibilities—truly a place where dreams are made.</p>
+
+                </div>
+            </div>
+        </article>
+    </main>
+    <footer class="footer">
+        <ul> 
+            <li> <a href="index.html"> Home </a> </li>
+            <li> <a href="ottawa-html5.html"> Ottawa </a> </li>
+            <li> <a href="new-york-html5.html"> New York City </a> </li>
+            <li> <a href="mexico-city-html5.html"> Mexico City </a> </li>
+        </ul>
+        <ul> 
+            <li> Designed & Built by Oswaldo Fabrizio Ascencio De Los Santos © 2025 </li>
+            <li> <a href="linked.com/in/ofdls"> <i class="fab fa-linkedin"></i>ofdls </a> </li>
+            <li> <a href="https://github.com/prayForTheLanterns"> <i class="fab fa-github"></i>prayForTheLanterns </a></li>
+        </ul>
+    </footer>
+</body>
+</html>

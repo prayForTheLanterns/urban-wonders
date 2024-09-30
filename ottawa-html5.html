@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> HTML5 Layout </title>
+    <meta name="author" content="Oswaldo Fabrizio Ascencio De Los Santos">
+    <meta name="description" content="HTML Layout assignment for CIS 385">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> <!-- FontAwesome is used for some icons classes in <i> tags-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css"> <!-- This stylesheet simply resets a lot of HTML elements, I always add these to my projects -->
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__title"> 
+            <span> Urban Wonders </span>
+            <i class="fas fa-city"></i>
+        </h1>
+        <h2 class="header__caption"> 
+            <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__list__item nav__list__item--link"> 
+                    <a href="index.html"> Capitals of North America </a>
+                </li>
+                <li class="nav__list__item"> 
+                    <input type="checkbox" id="dropdown-toggle" class="dropdown-toggle">
+                    <label for="dropdown-toggle" class="nav__list__item__btn">
+                        <span> Ottawa </span>
+                        <i class="fas fa-angle-down"></i>
+                        <i class="fas fa-angle-up"></i>
+                    </label>
+                    <div class="nav__list__item__dropdown-menu">
+                        <a href="ottawa-table.html" data-dropdown> &lt; table &gt; Layout </a>
+                        <a href="ottawa-div.html" data-dropdown> &lt; div &gt; Layout </a>
+                        <a href="ottawa-html5.html" data-dropdown> &lt; html5 &gt; Layout </a>
+                    </div>
+                </li>
+                <li class="nav__list__item"> 
+                    <input type="checkbox" id="dropdown-toggle-2" class="dropdown-toggle">
+                    <label for="dropdown-toggle-2" class="nav__list__item__btn">
+                        <span> New York City </span>
+                        <i class="fas fa-angle-down"></i>
+                        <i class="fas fa-angle-up"></i>
+                    </label>
+                    <div class="nav__list__item__dropdown-menu">
+                        <a href="new-york-table.html" data-dropdown> &lt; table &gt; Layout </a>
+                        <a href="new-york-div.html" data-dropdown> &lt; div &gt; Layout </a>
+                        <a href="new-york-html5.html" data-dropdown> &lt; html5 &gt; Layout </a>
+                    </div>
+                </li>
+                <li class="nav__list__item"> 
+                    <input type="checkbox" id="dropdown-toggle-3" class="dropdown-toggle">
+                    <label for="dropdown-toggle-3" class="nav__list__item__btn">
+                        <span> Mexico City </span>
+                        <i class="fas fa-angle-down"></i>
+                        <i class="fas fa-angle-up"></i>
+                    </label>
+                    <div class="nav__list__item__dropdown-menu">
+                        <a href="mexico-city-table.html" data-dropdown> &lt; table &gt; Layout </a>
+                        <a href="mexico-city-div.html" data-dropdown> &lt; div &gt; Layout </a>
+                        <a href="mexico-city-html5.html" data-dropdown> &lt; html5 &gt; Layout </a>
+                    </div>
+                </li>
+            </ul>
+            </nav>
+        </h2>
+        <h3 class="header__credit"> 
+            <i> <span> Oswaldo Fabrizio Ascencio De Los Santos </span> <time datetime="2024-09-287"> 28-SEPT-2024 </time> </i>
+            <i> CIS 385 HTML5 Layouts; Limited Edition 3101 </i>
+        </h3>
+    </header>
+
+    <main class="content"> -->
+        <article class="article">
+            <div class="article__header">
+                <h2> Ottawa <i class="fab fa-canadian-maple-leaf"></i> </h2>
+                <h3> Where historic charm blends seamlessly with modern culture and stunning natural beauty. </h3>
+            </div>
+            <div class="article__content">
+                <div class=article__content__cover">
+                    <figure>
+                        <img src="ottawa-alt-iii.jpg" alt="An image of Ottawa">
+                        <figcaption> The Canadian capital, nicest people on Earth </figcaption>
+                    </figure>
+                </div>
+                <div class="article__content__text">
+                    <h4>Canada's Capital of Charm!</h4>
+                    <p>Ottawa, the picturesque capital of Canada, offers a unique blend of history, culture, and stunning natural beauty. Nestled along the banks of the Rideau Canal, the city is known for its beautiful parks, historic landmarks, and vibrant arts scene. From the iconic Parliament Hill to the impressive National Gallery of Canada, Ottawa is a city that invites exploration.</p>
+                
+                    <p>Rich in heritage, Ottawa boasts numerous museums and cultural institutions that showcase Canada's history and diversity. The Canadian Museum of History and the Canadian War Museum offer deep insights into the nation's past, while the annual Canadian Tulip Festival brings vibrant colors to the spring landscape.</p>
+                
+                    <p>Food enthusiasts will delight in Ottawa’s culinary scene, where local markets and diverse restaurants reflect the multicultural fabric of the city. Enjoy everything from traditional Canadian fare to international cuisine, all while taking in the warm, welcoming atmosphere that defines Ottawa.</p>
+                
+                    <p>With its scenic waterfronts, picturesque neighborhoods, and bustling festivals, Ottawa is not just a political center but a city alive with creativity and charm. Whether you’re enjoying a leisurely stroll along the canal in winter or exploring the lively ByWard Market, Ottawa promises memorable experiences for every visitor.</p>
+                </div>
+                
+            </div>
+        </article>
+    </main>
+    <footer class="footer">
+        <ul> 
+            <li> <a href="index.html"> Home </a> </li>
+            <li> <a href="ottawa-html5.html"> Ottawa </a> </li>
+            <li> <a href="new-york-html5.html"> New York City </a> </li>
+            <li> <a href="mexico-city-html5.html"> Mexico City </a> </li>
+        </ul>
+        <ul> 
+            <li> Designed & Built by Oswaldo Fabrizio Ascencio De Los Santos © 2025 </li>
+            <li> <a href="linked.com/in/ofdls"> <i class="fab fa-linkedin"></i>ofdls </a> </li>
+            <li> <a href="https://github.com/prayForTheLanterns"> <i class="fab fa-github"></i>prayForTheLanterns </a></li>
+        </ul>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Table Layout </title>
+    <meta name="author" content="Oswaldo Fabrizio Ascencio De Los Santos">
+    <meta name="description" content="HTML Layout assignment for CIS 385">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> <!-- FontAwesome is used for some icons classes in <i> tags-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="table.css"> <!-- This stylesheet is important since it ensures the layout remains somewhat consistent between HTML structures/tags -->
+    <link rel="stylesheet" href="reset.css"> <!-- This stylesheet simply resets a lot of HTML elements, I always add these to my projects -->
+</head>
+<body>
+    <table class="layout">
+        <thead>
+            <tr>
+                <th colspan="2" class="header">
+                    <h1 class="header__title">
+                        <span> Urban Wonders </span>
+                        <i class="fas fa-city"></i>
+                    </h1>
+                    <h2 class="header__caption">
+                        <nav class="nav">
+                            <ul class="nav__list">
+                                <li class="nav__list__item nav__list__item--link"> 
+                                    <a href="index.html"> Capitals of North America </a>
+                                </li>
+                                <li class="nav__list__item"> 
+                                    <input type="checkbox" id="dropdown-toggle" class="dropdown-toggle">
+                                    <label for="dropdown-toggle" class="nav__list__item__btn">
+                                        <span> Ottawa </span>
+                                        <i class="fas fa-angle-down"></i>
+                                        <i class="fas fa-angle-up"></i>
+                                    </label>
+                                    <table class="nav__list__item__dropdown-menu">
+                                        <tr><td><a href="ottawa-table.html" >&lt; table &gt; Layout</a></td></tr>
+                                        <tr><td><a href="ottawa-div.html" >&lt; div &gt; Layout</a></td></tr>
+                                        <tr><td><a href="ottawa-html5.html" >&lt; html5 &gt; Layout</a></td></tr>
+                                    </table>
+                                </li>
+                                <li class="nav__list__item"> 
+                                    <input type="checkbox" id="dropdown-toggle-2" class="dropdown-toggle">
+                                    <label for="dropdown-toggle-2" class="nav__list__item__btn">
+                                        <span> New York City </span>
+                                        <i class="fas fa-angle-down"></i>
+                                        <i class="fas fa-angle-up"></i>
+                                    </label>
+                                    <table class="nav__list__item__dropdown-menu">
+                                        <tr><td><a href="new-york-table.html" >&lt; table &gt; Layout</a></td></tr>
+                                        <tr><td><a href="new-york-div.html" >&lt; div &gt; Layout</a></td></tr>
+                                        <tr><td><a href="new-york-html5.html" >&lt; html5 &gt; Layout</a></td></tr>
+                                    </table>
+                                </li>
+                                <li class="nav__list__item"> 
+                                    <input type="checkbox" id="dropdown-toggle-3" class="dropdown-toggle">
+                                    <label for="dropdown-toggle-3" class="nav__list__item__btn">
+                                        <span> Mexico City </span>
+                                        <i class="fas fa-angle-down"></i>
+                                        <i class="fas fa-angle-up"></i>
+                                    </label>
+                                    <table class="nav__list__item__dropdown-menu">
+                                        <tr><td><a href="mexico-city-table.html" >&lt; table &gt; Layout</a></td></tr>
+                                        <tr><td><a href="mexico-city-div.html" >&lt; div &gt; Layout</a></td></tr>
+                                        <tr><td><a href="mexico-city-html5.html" >&lt; html5 &gt; Layout</a></td></tr>
+                                    </table>
+                                </li>
+                            </ul>
+                        </nav>
+                    </h2>
+                    <h3 class="header__credit">
+                        <i> <span> Oswaldo Fabrizio Ascencio De Los Santos </span> <time datetime="2024-09-28">28-SEPT-2024</time> </i>
+                        <i> CIS 385 HTML5 Layouts; Limited Edition 3101 </i>
+                    </h3>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="2" class="content">
+                    <table class="article">
+                        <thead>
+                            <tr>
+                                <th colspan="2" class="article__header">
+                                    <h2> Mexico City <i class="fas fa-flag"></i> </h2>
+                                    <h3> A dynamic city that pulses with history, culture, and culinary delights at every turn.</h3>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="article__content__cover">
+                                    <figure>
+                                        <img src="mexico-city.jpg" alt="An image of Mexico City with the flag">
+                        <figcaption> A vibrant metropolis where ancient traditions meet modern flair, and every corner tells a story. </figcaption>
+                                    </figure>
+                                </td>
+                                <td class="article__content__text">
+                                    <h4>The Vibrant Heart of Mexico!</h4>
+                        <p>Mexico City, a sprawling metropolis steeped in history, is a vibrant tapestry of ancient and modern cultures. As one of the largest cities in the world, it offers a unique blend of stunning architecture, bustling markets, and rich traditions. From the historic Zócalo to the awe-inspiring ruins of Templo Mayor, the city is a living museum that captures the essence of Mexican heritage.</p>
+                    
+                        <p>The capital is home to a dynamic arts scene, with world-class museums like the Museo Frida Kahlo and the Palacio de Bellas Artes showcasing the works of iconic Mexican artists. Whether you’re exploring contemporary galleries or traditional folk art, Mexico City is a haven for art enthusiasts and culture lovers alike.</p>
+                    
+                        <p>Culinary adventures await in Mexico City, renowned for its diverse flavors and street food culture. Savor the best tacos, tamales, and churros from local vendors, or indulge in gourmet dining at Michelin-starred restaurants. Each bite tells a story, reflecting the city’s rich culinary traditions and regional influences.</p>
+                    
+                        <p>With its vibrant neighborhoods, lively plazas, and lush parks, Mexico City invites exploration at every turn. Whether you’re wandering through the historic streets of Coyoacán or experiencing the lively atmosphere of La Condesa, this city promises a wealth of unforgettable experiences and memories.</p>
+                    
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2" class="footer">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="ottawa-html5.html">Ottawa</a></li>
+                        <li><a href="new-york-html5.html">New York City</a></li>
+                        <li><a href="mexico-city-html5.html">Mexico City</a></li>
+                    </ul>
+                    <ul>
+                        <li>Designed & Built by Oswaldo Fabrizio Ascencio De Los Santos © 2025</li>
+                        <li><a href="https://linkedin.com/in/ofdls"><i class="fab fa-linkedin"></i> ofdls</a></li>
+                        <li><a href="https://github.com/prayForTheLanterns"><i class="fab fa-github"></i> prayForTheLanterns</a></li>
+                    </ul>
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

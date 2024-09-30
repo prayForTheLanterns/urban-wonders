@@ -1,0 +1,182 @@
+body {
+  font-family: "Times New Roman", Times, serif !important;
+}
+
+img {
+  filter: grayscale(1);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  flex-flow: column wrap;
+  padding: 1% 3% 0;
+  margin: 2%;
+  border: 5px solid black;
+  border-left: none;
+  border-right: none;
+}
+.header__title {
+  font-size: 8em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.header__caption {
+  font-size: 1.5em;
+  width: 100%;
+  text-transform: uppercase;
+}
+.header__caption ul {
+  display: flex;
+  gap: 10%;
+  justify-content: space-evenly;
+  padding: 1%;
+  list-style: none;
+  background: black;
+  color: white;
+}
+.header__credit {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1%;
+  font-style: italic;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-around;
+  padding: 1%;
+}
+.nav__list__item .dropdown-toggle {
+  display: none;
+  /*/ CSS only dropdown which works by using a hidden checkbox which allows us to manipulate the :checked pseudo-class. /*/
+}
+.nav__list__item .dropdown-toggle:checked ~ label .fa-angle-down {
+  display: none;
+}
+.nav__list__item .dropdown-toggle:checked ~ label .fa-angle-up {
+  display: inline-block;
+}
+.nav__list__item .dropdown-toggle:checked ~ div {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  gap: 5%;
+  padding: 2%;
+  font-size: smaller;
+  background: black;
+  color: white;
+}
+.nav__list__item__dropdown-menu {
+  display: none;
+}
+.nav__list__item__dropdown-menu a {
+  color: white;
+  text-decoration: none;
+}
+.nav__list__item__dropdown-menu a:hover {
+  text-decoration: underline;
+}
+.nav__list__item__btn .fa-angle-up {
+  display: none;
+}
+.nav__list__item--link a {
+  color: white;
+  text-decoration: none;
+}
+.nav__list__item--link a:hover {
+  text-decoration: underline;
+}
+
+.article__header {
+  display: flex;
+  align-items: center;
+  flex-flow: column wrap;
+  margin: 1% 0;
+  text-align: center;
+}
+.article__header h2 {
+  display: flex;
+  align-items: center;
+  flex-shrink: 1;
+  gap: 2%;
+  justify-content: center;
+  width: -webkit-fill-available;
+  margin: 0 2%;
+  font-size: 5em;
+  font-weight: bold;
+}
+.article__header h2::before, .article__header h2::after {
+  content: "";
+  height: 5px;
+  flex-grow: 1;
+  background: black;
+}
+.article__header h3 {
+  font-size: 2em;
+  font-style: italic;
+}
+.article__content {
+  display: flex;
+  gap: 2%;
+  padding: 0 27px;
+}
+.article__content__image {
+  padding: 0 2%;
+}
+.article__content__text {
+  padding: 0 2%;
+  border-left: 5px solid black;
+}
+.article__content__text h4 {
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+.article__content__text p {
+  margin: 5% 0;
+  text-align: justify;
+  letter-spacing: 2px;
+}
+.article__footer {
+  text-align: center;
+}
+.article__footer address i {
+  margin: 0 5px;
+}
+.article__footer address a {
+  color: black;
+  text-decoration: none;
+}
+
+.footer {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 2em;
+  padding: 2%;
+  margin: 2%;
+  border-top: 5px solid black;
+}
+.footer ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+}
+.footer ul li a {
+  color: inherit;
+  text-decoration: none;
+}
+.footer ul li a:hover {
+  text-decoration: underline;
+}
+.footer ul li a i {
+  margin: 0% 10px;
+}
+.footer ul:first-of-type {
+  padding: 1%;
+  background: black;
+  color: white;
+}
+
+/*# sourceMappingURL=style.css.map */

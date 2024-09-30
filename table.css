@@ -1,0 +1,31 @@
+.article__header {
+  display: table-cell;
+}
+
+.article__content__text {
+  vertical-align: middle;
+}
+
+.article__content__text,
+.article__content__cover {
+  padding: 0 27px;
+}
+
+.article tbody::before {
+  content: "";
+  display: block;
+  height: 10px; /* Simulates margin */
+}
+
+.nav__list__item .dropdown-toggle:checked ~ table {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  gap: 5%;
+  padding: 2%;
+  font-size: smaller;
+  background: black;
+  color: white;
+}
+
+/*# sourceMappingURL=table.css.map */
